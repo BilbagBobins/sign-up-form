@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans" rel="stylesheet">
+    <script src="sign-up.js" defer></script>
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="sidebar">
+            <div class="img-container">
+                <img src="img/miha-rekar-_YAXEfEiOBs-unsplash.jpg" alt="pretty street">
+            </div>
+            <div class="logo-container">
+                <img src="img/food-pizza-slice-svgrepo-com-white.svg" alt="Pizza">
+                <div class="logo">ePizza</div>
+            </div>
+        </div>
+        <div class="form-main-container">
+            <div class="heading">
+                <h2>Do you love pizza? </h2>
+                <h2>Do you want hot, fresh, delicious pizza 
+                delivered right to you inbox every single day? Sign up 
+                <em>now</em> to get your first slice today.</h2>
+                <h2>You <em>know</em> you want it.</h2>
+            </div>
+            <div class="form-inputs-container" id="sign-up">
+                <h2>Let's do this!</h2>
+                <form action="\" method="POST">
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="number" name="phonenumber" id="phonenumer">
+                    </div>
+                    <div>
+                        <label for="pwd">Password</label>
+                        <input type="password" name="pwd" id="pwd" required
+                        onchange="confirm()">
+                        <span id="message"></span>
+                    </div>
+                    <div>
+                        <label for="confirmpwd">Confirm Password</label>
+                        <input type="password" name="confirmpwd" id="confirmpwd" 
+                        required onchange="confirm()">
+                    </div>
+                    <input type="submit" id="submit-form" class="hidden">
+                </form>
+            </div>
+            <div class="footer">
+                <label for="submit-form">Create Account</label>
+                <!-- <button type="submit" form="sign-up">Create Account</button> -->
+                <div class="login">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
